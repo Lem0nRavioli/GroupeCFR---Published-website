@@ -22,6 +22,7 @@
 .section_wrapper h3{
     text-align: center;
     margin: 0.5%;
+    padding-left: 3%;
 }
 
 .section_title em{
@@ -49,11 +50,10 @@
     justify-content: space-evenly;
     font-size: 1em;
     margin-bottom: 2%;
-    transition: all 0.5s linear;
 }
 
 
-.content_wrapper div:last-child{
+.logo_section{
     margin-top: 2%;
     width: 100%;
 }
@@ -61,13 +61,10 @@
 .content_box{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 15%;
 }
 
-.content_wrapper.is-open{
-    max-height: max-content;
-}
 
 .content_box p{
     margin: 3%;
@@ -76,6 +73,7 @@
 
 .content_box :first-child{
     text-decoration: underline 2px;
+    text-align: left;
 }
 
 .opco_logo_wrapper{
@@ -86,8 +84,8 @@
 }
 
 .opco_logo_wrapper img{
-   max-width: 10%;
-   display: block;
+    max-width: 10%;
+    display: block;
     height: 20%;
 }
 
@@ -100,7 +98,38 @@
     transform: rotate(90deg) translatex(-5px);
 }
 
- .section_title.is-open {
+.section_title.is-open {
     color: #004CAE;
     /* text-decoration: underline black; */
+}
+
+@media screen and (max-width: 768px) {
+
+    .section_title img{
+        max-width: 97px;
+    }
+
+    .section_title{
+        font-size: 80%;
+    }
+
+    .content_wrapper{
+        flex-direction: column;
+        align-items: center;
+        font-size: 70%;
+    }
+
+    .content_box{
+        max-width: 41%;
+        margin-top: 1%;
+    }
+
+    #funding_page_title{
+        font-size: 200%;
+    }
+
+    .opco_logo_wrapper img{
+        max-width: 60px;
+    }
+
 }
