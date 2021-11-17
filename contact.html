@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page contact CFR">
+
+    <!-- global links  -->
+    <link rel="icon" href="./asset/logos/CFR_Logo_Bleu_Short.png">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/global_navbar.css">
+    <link rel="stylesheet" href="./css/global_footer.css">
+    <link rel="stylesheet" href="./css/global_social.css">
+
+    <!-- page relative links  -->
+    <link rel="stylesheet" href="./css/contact_form.css">
+    <link rel="stylesheet" href="./css/contact_banner.css">
+    <link rel="stylesheet" href="./css/contact_coords.css">
+    <link rel="stylesheet" href="./css/contact_map_n_form.css">
+
+    <title>Groupe CFR - Contactez-nous</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="accueil.html"><img src="asset/logos/CFR_Logo_Blanc.png" alt="CFR Logo"></a>
+        <ul>
+            <li> <a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+            <li> <a href="en_construction.html">Nos formations</a></li>
+            <li> <a href="funding_page.html">Financement</a></li>
+            <li> <a href="contact.html">Contact </a></li>
+            <li> <a href="faq.html">FAQ</a></li>
+            <li> <a href="en_construction.html">Blog</a></li>
+        </ul>
+    </nav>
+    <!-- fin navbar -->
+
+    <!-- Début contenu -->
+
+    <!-- Début bannière -->
+    <section class="contact_us_banner">
+        <div class="banner_text">
+            <h2>Suivez-nous</h2>
+            <p>
+                Toujours à vos côté
+                <br>
+                Où que vous soyez
+            </p>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/CFRformation/">
+                <img src="./asset/contact_page/facebook_white.png" alt="Social Media Facebook Icon">
+            </a>
+            <a href="https://www.instagram.com/cfrformationrecrutement/?utm_medium=copy_link">
+                <img src="./asset/contact_page/instagram_white.png" alt="Social Media Instagram Icon">
+            </a>
+            <a href="https://www.linkedin.com/company/centre-formation-recrutement/">
+                <img src="./asset/contact_page/linkedin_white.png" alt="Social Media LinkedIn Icon">
+            </a>
+        </div>
+    </section>
+    <hr class="banner_end_bar">
+    <!-- Fin bannière -->
+
+    <!-- Début coordonées -->
+    <section class="coords">
+        <h1 class="coords_title">Prenons contact !</h1>
+        <div class="coords_detail">
+            <div class="coords_text">
+                <img src="./asset/contact_page/pin_blue.svg" alt="Blue location icon">
+                <h2>Localisations</h2>
+                <p>
+                    154 TER avenue Victor Hugo
+                    <br>
+                    75016 PARIS
+                </p>
+                <p>
+                    94 rue Servient
+                    <br>
+                    69003 LYON
+                </p>
+                <p>
+                    2 rue Le Corbusier
+                    <br>
+                    95190 GOUSSAINVILLE
+                </p>
+            </div>
+            <div class="coords_text">
+                <img src="./asset/contact_page/phone_blue.svg" alt="Blue phone icon">
+                <h2>Téléphone</h2>
+                <p>
+                    +(33) 6 37 18 97 95
+                </p>
+            </div>
+            <div class="coords_text">
+                <img src="./asset/contact_page/mail_blue.svg" alt="Blue mail icon">
+                <h2>E-MAIL</h2>
+                <p>contact@groupecfr.fr</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fin coordonées -->
+
+    <!-- debut map n form  -->
+    <section class="map_n_form">
+
+        <!-- Début formulaire de contact -->
+        <!-- doc technique -->
+        <!-- https://formsubmit.co/ -->
+        <div class="form_container">
+            <form action="https://formsubmit.co/groupecfr3@gmail.com" method="POST" class="contact_form">
+                <input type="hidden" name="_subject" value="Demande de contact Groupe CFR">
+                <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.html">
+                <fieldset>
+                    <legend>Toujours à vos côtés !</legend>
+                    <hr class="section_break">
+                    <label for="prenom" class="text_input_label">Votre prénom*
+                        <input type="text" name="prenom" class="text_input" id="prenom" placeholder="Prénom" required>
+                    </label>
+                    <br>
+                    <label for="nom" class="text_input_label">Votre nom*
+                        <input type="text" name="nom" class="text_input" id="nom" placeholder="Nom" required>
+                    </label>
+                    <br>
+                    <label for="entreprise" class="text_input_label">Votre entreprise
+                        <input type="text" name="entreprise" class="text_input" id="entreprise"
+                            placeholder="Entreprise">
+                    </label>
+                    <br>
+                    <label for="mail" class="text_input_label">Votre adresse de messagerie*
+                        <input type="email" name="mail" class="text_input" id="mail"
+                            placeholder="Entrez une adresse mail valide" required>
+                    </label>
+                    <br>
+                    <label for="tel" class="text_input_label">Votre numéro de téléphone
+                        <input type="text" name="tel" class="text_input" id="tel" placeholder="Numéro de téléphone">
+                    </label>
+                    <br>
+                    <span>Vous êtes : </span>
+                    <label for="employeur" class="statut">
+                        <input type="radio" name="statut" class="radio_input" id="employeur" value="employeur" checked>
+                        Employeur
+                    </label>
+                    <label for="salarie" class="statut">
+                        <input type="radio" name="statut" class="radio_input" id="salarie" value="salarie">
+                        Salarié
+                    </label>
+                    <br>
+                    <br>
+                    <label for="objet" class="text_input_label">Objet de votre message*
+                        <input type="text" name="objet" class="text_input" id="objet" placeholder="Objet" required>
+                    </label>
+                    <br>
+                    <label for="message" class="message"><span class="message_label">Votre message*</span>
+                        <br>
+                        <textarea name="message" id="message" cols="50" rows="10"
+                            placeholder="Tapez votre message ici..." required></textarea>
+                    </label>
+                    <p class="form_comment">*Champs obligatoires</p>
+                    <br>
+                    <input type="submit" class="submit_btn" value="Envoyer">
+                </fieldset>
+            </form>
+        </div>
+        <!-- Fin formulaire de contact -->
+
+        <!-- debut map -->
+        <div class="map_container">
+            <h1>Nous sommes ouvert</h1>
+            <h2>Du lundi au vendredi</h2>
+            <p>Matin : de 9h à 12h</p>
+            <p>Après-midi : de 14h à 17h</p>
+            <iframe class="map"
+                src="https://www.google.com/maps/d/embed?mid=11_y-6X5fsmGXHMoGpNi6o2q5XgVpO7HE"></iframe>
+        </div>
+        <!-- fin map -->
+
+    </section>
+    <!-- fin map n form -->
+
+    <!-- Fin contenu -->
+
+    <!-- footer -->
+    <footer class="flex-rw">
+
+        <ul class="footer-list-top">
+            <li>
+                <h4 class="footer-list-header">ADRESSES</h4>
+            </li>
+            <li> <a href=""> 154 TER avenue Victor Hugo ,75016 PARIS</a></li>
+            <li> <a href=""> 94 rue Servient,69003 LYON</a></li>
+            <li> <a href=""> 2 rue le Corbusier, 95190 GOUSSAINVILLE</a></li>
+
+        </ul>
+        <ul class="footer-list-top">
+            <li>
+                <h4 class="footer-list-header">INFORMATIONS LEGALES</h4>
+            </li>
+
+
+            <li><a href='en_construction.html' class="generic-anchor footer-list-anchor">Cookies</a></li>
+            <li><a href='mentions_legales.html' class="generic-anchor footer-list-anchor">Mention légales</a></li>
+        </ul>
+        <ul class="footer-list-top">
+            <li id='help'>
+                <h4 class="footer-list-header">Menu</h4>
+            </li>
+            <li><a href='accueil.html' class="generic-anchor footer-list-anchor">Accueil</a></li>
+            <li><a href='qui_sommes_nous.html' class="generic-anchor footer-list-anchor">Qui Sommes-nous</a></li>
+            <li><a href='en_construction.html' class="generic-anchor footer-list-anchor">Nos formations</a></li>
+            <li><a href='funding_page.html' class="generic-anchor footer-list-anchor">Financement</a></li>
+            <li><a href='contact.html' class="generic-anchor footer-list-anchor">Contact</a></li>
+            <li><a href='faq.html' class="generic-anchor footer-list-anchor">FAQ</a></li>
+
+        </ul>
+        <section class="footer-social-section flex-rw">
+            <span class="footer-social-overlap footer-social-connect">
+                CONNECT <span class="footer-social-small">with</span> US</span>
+            <span class="footer-social-overlap footer-social-icons-wrapper">
+                <a href="https://www.facebook.com/CFRformation/" class="generic-anchor" target="_blank" title="Facebook"
+                    itemprop="significantLink"><img src="./asset/logos/facebook_icon-icons.com_59205.png" alt=""></a>
+                <a href="https://www.instagram.com/cfrformationrecrutement/?utm_medium=copy_link" class="generic-anchor"
+                    target="_blank" title="Instagram" itemprop="significantLink"><img
+                        src="./asset/logos/instagram_logo_icon_186894.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/centre-formation-recrutement/" class="generic-anchor"
+                    target="_blank" title="Youtube" itemprop="significantLink"><img
+                        src="./asset/logos/linkedin_icon-icons.com_65929.png" alt=""></a>
+
+            </span>
+        </section>
+    </footer>
+    <!-- fin footer -->
+
+
+
+</body>
+
+</html>

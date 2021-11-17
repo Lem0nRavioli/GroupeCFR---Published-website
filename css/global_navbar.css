@@ -1,0 +1,78 @@
+
+/* theme css */
+/*navabar*/
+.navbar{
+    margin: 0;
+    height: 15vh;
+    background-color: #004CAE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', monospace;
+}
+
+.navbar ul li{
+    padding: 0 1.6rem;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.navbar ul li a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    margin: auto;
+    background: transparent;
+    transition: width .5s ease, background-color .4s ease;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+    background: #f0c95f; 
+    color: #f0c95f;
+}
+
+.navbar ul li a{
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    height: 23px;
+    margin-bottom: 2px;
+}
+
+.navbar ul li a:hover{
+    height: 23px;
+    font-size: 1.2rem;
+    color: #f0c95f;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.navbar img{
+    height: 5rem;
+}
+
+@media screen and (max-width: 80rem){
+    .navbar{
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar img{
+        padding-top: 1rem;
+    }
+    .navbar ul {
+
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul li{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .navbar ul li a{
+        font-size: 1.2rem;
+    }
+}

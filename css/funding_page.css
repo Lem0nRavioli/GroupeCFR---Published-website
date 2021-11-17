@@ -1,0 +1,106 @@
+#funding_page_title{
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 3%;
+}
+
+.section_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.section_title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 150%;
+    align-items: center;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.section_wrapper h3{
+    text-align: center;
+    margin: 0.5%;
+}
+
+.section_title em{
+    font-style: normal;
+    font-weight: bolder;
+    color: #004cae;
+}
+
+.section_title img{
+    max-width: 12%;
+}
+
+.cpf{
+    margin: 1%;
+}
+
+.pole_emploi_logo{
+    max-width: 5% !important;
+    margin: 1%;
+}
+
+.content_wrapper{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1em;
+    margin-bottom: 2%;
+    transition: all 0.5s linear;
+}
+
+
+.content_wrapper div:last-child{
+    margin-top: 2%;
+    width: 100%;
+}
+
+.content_box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 15%;
+}
+
+.content_wrapper.is-open{
+    max-height: max-content;
+}
+
+.content_box p{
+    margin: 3%;
+    line-height: 150%;
+}
+
+.content_box :first-child{
+    text-decoration: underline 2px;
+}
+
+.opco_logo_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.opco_logo_wrapper img{
+   max-width: 10%;
+   display: block;
+    height: 20%;
+}
+
+.section_title:after {
+    content: "\27A4";
+    color: #004CAE;
+    padding-left: 1%;
+}
+.section_title.is-open:after {
+    transform: rotate(90deg) translatex(-5px);
+}
+
+ .section_title.is-open {
+    color: #004CAE;
+    /* text-decoration: underline black; */
+}
