@@ -52,8 +52,11 @@
     margin: 1%;
 }
 
-.content_wrapper.is-open{
+.content_wrapper{
     display: none;
+}
+
+.content_wrapper.is-open{
     flex-wrap: wrap;
     align-content: space-around;
     align-items: center;
