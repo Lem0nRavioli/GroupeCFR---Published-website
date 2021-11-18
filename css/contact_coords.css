@@ -34,12 +34,16 @@
     height: 48px;
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 40rem) {
 
-    .coords{
-        font-size: .6rem;
-
+    .coords_detail{
+        flex-direction: column;
+        width: 16rem;
+        margin: auto;
+    }
+       .coords h1{
+        text-align: center;
     }
 
-    
+
 }
