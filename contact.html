@@ -113,7 +113,8 @@
         <!-- https://formsubmit.co/ -->
         <div class="form_container">
             <form action="https://formsubmit.co/digona6825@elastit.com" method="POST" class="contact_form">
-                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_subject" value="Nouvelle demande de contact Groupe CFR">
+                <input type="hidden" name="_template" value="table">
                 <fieldset>
                     <legend>Toujours à vos côtés !</legend>
                     <hr class="section_break">
@@ -141,39 +142,32 @@
                     <br>
                     <span>Vous êtes : </span>
                     <div class="statut_client">
-
-                        <div class="statut_client_1">
-                            <label for="employeur" class="statut">
-                                <input type="radio" name="statut" class="radio_input" id="employeur" value="employeur"
-                                    checked>
-                                Employeur
-                            </label>
-                            <label for="salarie" class="statut">
-                                <input type="radio" name="statut" class="radio_input" id="salarie" value="salarie">
-                                Salarié
-                            </label>
-                            <label for="etudiant" class="statut">
-                                <input type="radio" name="statut" class="radio_input" id="etudiant" value="etudiant">
-                                Etudiant
-                            </label>
-                        </div>
-
-                        <div class="statut_client_1">
-                            <label for="recherche_emploi" class="statut">
-                                <input type="radio" name="statut" class="radio_input" id="recherche_emploi"
-                                    value="recherche_emploi">
-                                En recherche d'emploi
-                            </label>
-                            <label for="independant" class="statut">
-                                <input type="radio" name="statut" class="radio_input" id="independant"
-                                    value="independant">
-                                Indépendant
-                            </label>
-                            <label for="retraite" class="statut">
-                                <input type="radio" name="statut" class="radio_input" id="retraite" value="retraite">
-                                Retraité
-                            </label>
-                        </div>
+                        <label for="employeur" class="statut">
+                            <input type="radio" name="statut" class="radio_input" id="employeur" value="employeur"
+                                checked>
+                            Employeur
+                        </label>
+                        <label for="salarie" class="statut">
+                            <input type="radio" name="statut" class="radio_input" id="salarie" value="salarie">
+                            Salarié
+                        </label>
+                        <label for="etudiant" class="statut">
+                            <input type="radio" name="statut" class="radio_input" id="etudiant" value="etudiant">
+                            Etudiant
+                        </label>
+                        <label for="recherche_emploi" class="statut">
+                            <input type="radio" name="statut" class="radio_input" id="recherche_emploi"
+                                value="recherche_emploi">
+                            En recherche d'emploi
+                        </label>
+                        <label for="independant" class="statut">
+                            <input type="radio" name="statut" class="radio_input" id="independant" value="independant">
+                            Indépendant
+                        </label>
+                        <label for="retraite" class="statut">
+                            <input type="radio" name="statut" class="radio_input" id="retraite" value="retraite">
+                            Retraité
+                        </label>
                     </div>
                     <br>
                     <br>
@@ -198,32 +192,32 @@
                     <br>
                     <div class="formation">
                         <label for="langues" class="statut">
-                            <input type="checkbox" name="formation_voulu" class="checkbox_input" id="langues"
-                                value="langues">
+                            <input type="checkbox" name="formation_langues" class="checkbox_input" id="langues"
+                                value="oui">
                             Langues
                         </label>
                         <label for="numerique" class="statut">
-                            <input type="checkbox" name="formation_voulu" class="checkbox_input" id="numerique"
-                                value="numerique">
+                            <input type="checkbox" name="formation_numerique" class="checkbox_input" id="numerique"
+                                value="oui">
                             Numérique
                         </label>
                         <label for="dev_numerique" class="statut">
-                            <input type="checkbox" name="formation_voulu" class="checkbox_input" id="dev_numerique"
-                                value="dev_numerique">
-                            Développement Numérique
+                            <input type="checkbox" name="formation_dev_numerique" class="checkbox_input" id="dev_numerique"
+                                value="oui">
+                            Dév. Numérique
                         </label><label for="design_numerique" class="statut">
-                            <input type="checkbox" name="formation_voulu" class="checkbox_input" id="design_numerique"
-                                value="design_numerique">
+                            <input type="checkbox" name="formation_design_numerique" class="checkbox_input" id="design_numerique"
+                                value="oui">
                             Design Numérique
                         </label>
                         <label for="finance" class="statut">
-                            <input type="checkbox" name="formation_voulu" class="checkbox_input" id="finance"
-                                value="finance">
+                            <input type="checkbox" name="formation_finance" class="checkbox_input" id="finance"
+                                value="oui">
                             Finance
                         </label>
                         <label for="management" class="statut">
-                            <input type="checkbox" name="formation_voulu" class="checkbox_input" id="management"
-                                value="management">
+                            <input type="checkbox" name="formation_management" class="checkbox_input" id="management"
+                                value="oui">
                             Management
                         </label>
                     </div>
@@ -239,8 +233,7 @@
                     </label>
                     <p class="form_comment">*Champs obligatoires</p>
                     <br>
-                    <input type="hidden" name="_next"
-                        value="http://groupecfr.com/thankyou.html">
+                    <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.html">
                     <input type="submit" class="submit_btn" value="Envoyer">
                 </fieldset>
             </form>
