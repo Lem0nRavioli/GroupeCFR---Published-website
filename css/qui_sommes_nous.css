@@ -15,7 +15,6 @@
 }
 
 
-
 /* Partie présentation de l'entreprise */
 
 .presentation .groupecfr {
@@ -26,6 +25,8 @@
     align-content: center;
     height: 62vh;
     text-align: justify;
+    flex-direction: row;
+    overflow-y: auto;
 }
 
 .presentation .groupecfr img {
@@ -64,6 +65,7 @@
 
 .presentation .nos_objectifs {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-content: center;
     height: 80vh;
@@ -132,6 +134,7 @@
     align-content: center;
     align-items: center;
     text-align: justify;
+    /* overflow-y: auto; */
 }
 
 .nos_objectifs .text_objectif #doSomethingGreat {
@@ -208,10 +211,9 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    gap: 8%;
 }
   
 .team {
@@ -356,6 +358,7 @@
 @media screen and (max-width: 1370px){
     .presentation .groupecfr {
         font-size: 1.3rem;
+        justify-content: flex-start;
     }
     .nos_objectifs .text_objectif #doSomethingGreat {
         height: 150px;
@@ -374,11 +377,27 @@
     }
 }
 
+@media screen and (max-width: 1280px){
+    .text_objectif p {
+        font-size: 1.3rem;
+    }
+
+    .intro_experts {
+        font-size: 1.3rem;
+    }
+    
+    .experts_container .renvoie {
+        font-size: 1.3rem;
+    }
+}
+
+
 @media screen and (max-width: 1213px){
    
     .presentation .groupecfr {
         flex-direction: column;
         height: 90vh;
+        justify-content: flex-start;
     }
 
     .presentation .nos_objectifs {
@@ -418,6 +437,8 @@
 
     .presentation .groupecfr {
         height: 100vh;
+        justify-content: flex-start;
+
     }
 
     .nos_objectifs .text_objectif #doSomethingGreat {
@@ -442,6 +463,8 @@
 
     .presentation .groupecfr {
         height: 120vh;
+        justify-content: flex-start;
+
     }
 
     .presentation .nos_objectifs {
@@ -464,6 +487,7 @@
     }
     .presentation .groupecfr {
         height: 150vh;
+        justify-content: flex-start;
     }
     .nos_objectifs .text_objectif #doSomethingGreat {
         height: 120px;
@@ -527,6 +551,16 @@
     }
     .presentation .nos_objectifs {
         height: 210vh;
+    }
+}
+
+@media screen and (max-height: 510px){
+
+    .presentation .groupecfr {
+        height: 260vh;
+    }
+    .presentation .nos_objectifs {
+        height: 230vh;
     }
 }
 
