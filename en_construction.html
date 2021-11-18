@@ -23,17 +23,39 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar">
-        <a href="accueil.html"><img src="asset/logos/CFR_Logo_Blanc.png" alt="CFR Logo"></a>
-        <ul>
-            <li> <a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
-            <li> <a href="en_construction.html">Nos formations</a></li>
-            <li> <a href="funding_page.html">Financement</a></li>
-            <li> <a href="contact.html">Contact </a></li>
-            <li> <a href="faq.html">FAQ</a></li>
-            <li> <a href="en_construction.html">Blog</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <script src="./js/navbar.js" defer></script>
+        <nav class="navbar">
+            <a href="accueil.html" class="logo">
+                <img src="asset/logos/CFR_Logo_Blanc.png" alt="Logo Groupe CFR">
+            </a>
+            <ul class="nav_menu">
+                <li class="nav_item">
+                    <a href="qui_sommes_nous.html" class="nav_link">Qui sommes-nous</a>
+                </li>
+                <li class="nav_item">
+                    <a href="en_construction.html" class="nav_link">Nos formations</a>
+                </li>
+                <li class="nav_item">
+                    <a href="funding_page.html" class="nav_link">Financement</a>
+                </li>
+                <li class="nav_item">
+                    <a href="contact.html" class="nav_link">Contact </a>
+                </li>
+                <li class="nav_item">
+                    <a href="faq.html" class="nav_link">FAQ</a>
+                </li>
+                <li class="nav_item">
+                    <a href="en_construction.html" class="nav_link">Blog</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
     <!-- fin navbar -->
 
     <!-- Début contenu -->
