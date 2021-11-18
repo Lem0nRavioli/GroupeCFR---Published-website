@@ -1,5 +1,6 @@
 
 
+
 .form_container {
     display: flex;
     justify-content: center;
@@ -8,6 +9,7 @@
     margin-bottom: 1%;
     padding-top: 1%;
     border-radius: 5px;
+    width: 50%;
 }
 
 .form_container fieldset{
@@ -26,6 +28,7 @@
     border: 0;
     padding: 2%;
     outline: none;
+
 }
 
 .text_input_label{
@@ -101,6 +104,7 @@
     border: 0;
     padding: 1rem;
     outline: none;
+
 }
 
 .form_comment{
@@ -135,16 +139,40 @@
     flex-direction: column;
 }
 
-.duree {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
+
 
 span {
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 40rem) {
+
+    .text_input{
+    
+        width: 20rem;
+        margin: auto;
+    }
+    #message{
+
+        
+        width: 18rem;
+        margin: auto;
+    }
+
+    
+}
+@media screen and (max-width: 20rem) {
+
+    .text_input{
+    
+        width: 16rem;
+        margin: auto;
+    }
+    #message{
+     
+        width: 14rem;
+        margin: auto;
+    }
+  
 }

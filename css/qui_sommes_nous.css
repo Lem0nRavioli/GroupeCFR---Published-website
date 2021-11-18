@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 .presentation .text_groupecfr .par1 {
@@ -486,5 +487,55 @@
     }
     .presentation .nos_objectifs {
         height: 150vh;
+    }
+}
+
+@media screen and (max-height: 800px){
+
+    .presentation .groupecfr {
+        height: 180vh;
+    }
+    .presentation .nos_objectifs {
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 714px){
+
+    .presentation .groupecfr {
+        height: 200vh;
+    }
+    .presentation .nos_objectifs {
+        height: 170vh;
+    }
+}
+
+@media screen and (max-height: 645px){
+
+    .presentation .groupecfr {
+        height: 220vh;
+    }
+    .presentation .nos_objectifs {
+        height: 190vh;
+    }
+}
+
+@media screen and (max-height: 570px){
+
+    .presentation .groupecfr {
+        height: 240vh;
+    }
+    .presentation .nos_objectifs {
+        height: 210vh;
+    }
+}
+
+@media screen and (max-height: 510px){
+
+    .presentation .groupecfr {
+        height: 260vh;
+    }
+    .presentation .nos_objectifs {
+        height: 230vh;
     }
 }
