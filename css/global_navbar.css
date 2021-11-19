@@ -7,6 +7,10 @@
   top: 0;
   z-index: 4;
   width: 100%;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15),
+              0 4px 8px rgba(0, 0, 0, 0.15),
+              0 5px 9px rgba(0, 0, 0, 0.15),
+              0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
