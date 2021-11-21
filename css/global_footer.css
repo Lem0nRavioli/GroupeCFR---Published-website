@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
 
 
-
 .footer-list-top {
   list-style: none;
   box-sizing: border-box;
@@ -11,17 +10,26 @@
   text-decoration: none
 }
 
+.footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  box-shadow: -1px -4px 12px -4px rgba(0,0,0,0.35),
+              -2px -5px 13px -5px rgba(0,0,0,0.35),
+              -3px -6px 14px -6px rgba(0,0,0,0.35);
+}
+
 .flex-rw {
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
 }
-.flex-rw .footer-list-top a{
-    color: #ccc;
+
+.footer-container .footer-list-top a{
+  color: #ccc;
 }
 
-
-.flex-rw {
+.footer-container {
   background: #004CAE;
   margin-top: auto;
   width: 100%
