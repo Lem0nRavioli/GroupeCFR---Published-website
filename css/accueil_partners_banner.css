@@ -11,15 +11,20 @@
 .partners_img_wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 80%;
 }
 
 .partners_img_wrapper img{
     align-self: center;
-    min-width: 10%;
-    max-width: 25%;
-    /* padding: 5%; */
+    min-width: 65px;
+    max-width: 8%;
+    /* width: 10%; */
     box-sizing: border-box;
     max-height: 250px;
+    box-sizing: content-box;
+}
+
+.conflans_logo{
+    max-height: 200px !important;
 }
