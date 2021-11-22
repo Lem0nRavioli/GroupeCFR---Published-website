@@ -50,11 +50,14 @@
   transition: width .5s ease, background-color .4s ease;
 }
 
-.header ul li a:hover:after {
+.header ul li a:hover:after,
+.header ul li a:focus:after {
   width: 100%;
   background: #f0c95f; 
   color: #f0c95f;
 }
+
+
 
 .header ul li a{
   font-size: 1.2rem;
@@ -64,13 +67,16 @@
   margin-bottom: 2px;
 }
 
-.header ul li a:hover{
+.header ul li a:hover,
+.header ul li a:focus {
   height: 23px;
   font-size: 1.2rem;
   color: #f0c95f;
   text-decoration: none;
   transition: .5s ease-in-out;
 }
+
+
 
 .hamburger {
   display: none;
@@ -87,7 +93,7 @@
   margin: 6px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: rgb(224, 216, 216);
 }
 
 .nav_menu {
@@ -102,6 +108,28 @@
   color: #475569;
   padding: 0.9rem;
 }
+
+.nav-is-stuck .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15),
+              0 4px 8px rgba(0, 0, 0, 0.15),
+              0 5px 9px rgba(0, 0, 0, 0.15),
+              0 6px 10px rgba(0, 0, 0, 0.15);
+	animation: stickAnim .3s;
+}
+ 
+@keyframes stickAnim {
+	0% {
+		transform: translateY(-86px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 
 
 /* ---------------------- media queries ---------------------- */

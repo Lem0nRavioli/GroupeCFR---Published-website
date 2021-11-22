@@ -21,4 +21,5 @@
     max-width: 25%;
     /* padding: 5%; */
     box-sizing: border-box;
+    max-height: 250px;
 }

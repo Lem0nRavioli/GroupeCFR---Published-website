@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merienda&display=swap');
+
 .qsn_container {
     font-size: 1.8rem;
     display: flex;
@@ -17,16 +19,19 @@
 
 /* Partie présentation de l'entreprise */
 
+.histoire h1 {
+    text-align: center;
+    border-bottom: black 2px solid;
+}
+
 .presentation .groupecfr {
     font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    height: 62vh;
     text-align: justify;
     flex-direction: row;
-    overflow-y: auto;
 }
 
 .presentation .groupecfr img {
@@ -59,6 +64,54 @@
     border-bottom: black 2px solid;
 }
 
+/* Le mot de la dirigeante */
+
+.zohra_dirigeante {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    background-color: #004CAE;
+    color: #fff;
+    border-radius: 0.4em;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 8%), 0 2px 2px hsl(0deg 0% 0% / 8%), 0 4px 4px hsl(0deg 0% 0% / 8%), 0 8px 8px hsl(0deg 0% 0% / 8%), 0 16px 16px hsl(0deg 0% 0% / 8%);
+}
+
+.mot_dirigeante {
+    font-family: 'Merienda', cursive;
+    background: url(../asset/icons/right_quote.png) no-repeat right bottom;
+    background-size: 1.8em;
+    text-indent: -25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-style: italic;
+    width: 80%;
+}
+
+.mot_dirigeante::first-letter {
+    background: url(../asset/icons/left_quote.png) no-repeat left top;
+    background-size: 1.2em;
+    padding-left: 25px;
+    font-size: 1.8em;
+}
+
+.histoire #zohra {
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 30px;
+    text-align: right;
+    text-decoration: underline;
+    font-style: initial;
+}
+
+#zohra_png_mot {
+    align-self: flex-end;
+    width: 30%;
+    height: auto;
+}
 
 
 /* Partie objectifs avec les vignettes à gauche */
@@ -68,8 +121,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    height: 80vh;
-    /* margin: 2%; */
     font-size: 1.6rem;
     line-height: 2.2rem;
     gap: 20px;
@@ -134,7 +185,6 @@
     align-content: center;
     align-items: center;
     text-align: justify;
-    /* overflow-y: auto; */
 }
 
 .nos_objectifs .text_objectif #doSomethingGreat {
@@ -336,6 +386,7 @@
 }
 
 
+
 @media screen and (max-width: 1720px){
     .nos_objectifs .text_objectif #doSomethingGreat {
         height: 250px;
@@ -359,6 +410,9 @@
     .presentation .groupecfr {
         font-size: 1.3rem;
         justify-content: flex-start;
+    }
+    .mot_dirigeante {
+        font-size: 1.3rem;
     }
     .nos_objectifs .text_objectif #doSomethingGreat {
         height: 150px;
@@ -396,14 +450,12 @@
    
     .presentation .groupecfr {
         flex-direction: column;
-        height: 90vh;
         justify-content: flex-start;
     }
 
     .presentation .nos_objectifs {
         flex-direction: column;
         align-items: center;
-        height: 120vh;
     }
 
     .nos_objectifs .bullet_point {
@@ -428,6 +480,15 @@
     }
 }
 
+@media screen and (max-width: 835px){
+    .mot_dirigeante {
+        margin: 2rem 0;
+    }
+    #zohra_png_mot {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 660px){
 
     .presentation .groupecfr img {
@@ -436,9 +497,7 @@
     }
 
     .presentation .groupecfr {
-        height: 100vh;
         justify-content: flex-start;
-
     }
 
     .nos_objectifs .text_objectif #doSomethingGreat {
@@ -446,9 +505,6 @@
         width: 400px;
     }
 
-    .presentation .nos_objectifs {
-        height: 120vh;
-    }
     .nos_objectifs .bullet_point {
         font-size: 1.3rem;
     }
@@ -462,14 +518,10 @@
 @media screen and (max-width: 481px){
 
     .presentation .groupecfr {
-        height: 120vh;
         justify-content: flex-start;
 
     }
 
-    .presentation .nos_objectifs {
-        height: 130vh;
-    }
     .nos_objectifs .bullet_point {
         font-size: 0.9rem;
     }
@@ -482,94 +534,12 @@
 @media screen and (max-width: 417px){
     
     .presentation .groupecfr img {
-        height: 150px;
         width: 260px;
     }
     .presentation .groupecfr {
-        height: 150vh;
         justify-content: flex-start;
     }
     .nos_objectifs .text_objectif #doSomethingGreat {
-        height: 120px;
         width: 270px;
-    }
-}
-@media screen and (max-width: 317px){
-
-    .presentation .groupecfr {
-        height: 170vh;
-    }
-    .presentation .nos_objectifs {
-        height: 150vh;
-    }
-}
-
-@media screen and (max-width: 300px){
-
-    .presentation .groupecfr {
-        height: 180vh;
-    }
-    .presentation .nos_objectifs {
-        height: 150vh;
-    }
-}
-
-@media screen and (max-height: 800px){
-
-    .presentation .groupecfr {
-        height: 180vh;
-    }
-    .presentation .nos_objectifs {
-        height: 150vh;
-    }
-}
-
-@media screen and (max-height: 714px){
-
-    .presentation .groupecfr {
-        height: 200vh;
-    }
-    .presentation .nos_objectifs {
-        height: 170vh;
-    }
-}
-
-@media screen and (max-height: 645px){
-
-    .presentation .groupecfr {
-        height: 220vh;
-    }
-    .presentation .nos_objectifs {
-        height: 190vh;
-    }
-}
-
-@media screen and (max-height: 570px){
-
-    .presentation .groupecfr {
-        height: 240vh;
-    }
-    .presentation .nos_objectifs {
-        height: 210vh;
-    }
-}
-
-@media screen and (max-height: 510px){
-
-    .presentation .groupecfr {
-        height: 260vh;
-    }
-    .presentation .nos_objectifs {
-        height: 230vh;
-    }
-}
-
-@media screen and (max-height: 510px){
-
-    .presentation .groupecfr {
-        height: 260vh;
-    }
-    .presentation .nos_objectifs {
-        height: 230vh;
     }
 }
