@@ -21,7 +21,7 @@ ScrollReveal().reveal('.header', {
             interval: 0,
             opacity: 1,
             origin: 'left',
-            reset: true
+            reset: false
             
   
     });
@@ -34,7 +34,7 @@ ScrollReveal().reveal('.header', {
         distance: '10rem',
         duration: 600,
         origin: 'right',
-        reset: true
+        reset: false
         
 
 });
@@ -43,7 +43,7 @@ ScrollReveal().reveal('.this_is_who_i_am', {
     distance: '10rem',
     duration: 600,
     origin: 'left',
-    reset: true
+    reset: false
     
 
 });
@@ -53,7 +53,7 @@ ScrollReveal().reveal('.bullet_point', {
     distance: '10rem',
     duration: 600,
     origin: 'left',
-    reset: true
+    reset: false
     
 
 });
@@ -64,7 +64,7 @@ ScrollReveal().reveal('.text_objectif', {
     distance: '0rem',
     duration: 600,
     origin: 'right',
-    reset: true
+    reset: false
     
 
 });
@@ -74,8 +74,54 @@ ScrollReveal().reveal('.team', {
     distance: '10rem',
     duration: 600,
     origin: 'bottom',
-    reset: true
+    reset: false
     
 
 });
 
+
+    /* -------- acceuil----------- */
+
+    ScrollReveal().reveal('.partners_img_wrapper', {
+        delay: 200,
+        distance: '10rem',
+        duration: 600,
+        origin: 'bottom',
+        reset: false
+        
+
+});
+ScrollReveal().reveal('.icone_thema', {
+    delay: 200,
+    distance: '10rem',
+    duration: 600,
+    origin: 'left',
+    reset: false
+    
+});
+ScrollReveal().reveal('.stat_box', {
+    delay: 200,
+    distance: '0rem',
+    duration: 600,
+    origin: 'right',
+    reset: false
+    
+});
+
+
+ScrollReveal().reveal('.about_us_img', {
+    delay: 200,
+    distance: '10rem',
+    duration: 600,
+    origin: 'left',
+    reset: false
+    
+});
+ScrollReveal().reveal('.about_us_text', {
+    delay: 200,
+    distance: '0rem',
+    duration: 600,
+    origin: 'right',
+    reset: false
+    
+});
