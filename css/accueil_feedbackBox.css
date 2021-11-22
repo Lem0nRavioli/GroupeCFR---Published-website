@@ -9,6 +9,7 @@
     margin: 0 15px 30px 15px;
     overflow: hidden;
     position: relative;
+    min-height: 160px;
 }
 
 .testimonial:before {
