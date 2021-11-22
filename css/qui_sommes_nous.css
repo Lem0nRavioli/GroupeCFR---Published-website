@@ -431,20 +431,6 @@
     }
 }
 
-@media screen and (max-width: 1280px){
-    .text_objectif p {
-        font-size: 1.3rem;
-    }
-
-    .intro_experts {
-        font-size: 1.3rem;
-    }
-    
-    .experts_container .renvoie {
-        font-size: 1.3rem;
-    }
-}
-
 
 @media screen and (max-width: 1213px){
    
@@ -516,10 +502,24 @@
 }
 
 @media screen and (max-width: 481px){
+    .histoire h1 {
+        font-size: 2.6rem;
+    }
+
+    .titre_section {
+        font-size: 2rem;
+    }
+
+    .experts_container .renvoie a {
+        font-size: 1rem;
+    }
 
     .presentation .groupecfr {
         justify-content: flex-start;
-
+        font-size: 0.8rem;
+    }
+    .mot_dirigeante {
+        font-size: 0.8rem;
     }
 
     .nos_objectifs .bullet_point {
@@ -530,11 +530,23 @@
         height: 50px;
         width: 50px;
     }
+
+    .text_objectif p {
+        font-size: 0.8rem;
+    }
+    
+    .intro_experts {
+        font-size: 0.8rem;
+    }
+    
+    .experts_container .renvoie {
+        font-size: 0.8rem;
+    }
 }
 @media screen and (max-width: 417px){
     
     .presentation .groupecfr img {
-        width: 260px;
+        width: 300px;
     }
     .presentation .groupecfr {
         justify-content: flex-start;
