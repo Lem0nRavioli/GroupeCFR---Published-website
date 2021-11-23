@@ -27,20 +27,34 @@
             
             <?php
                 while ($donnees = $req->fetch()) {
-                if (empty($donnees)) {
-                    echo "La page demandée n'existe pas...";
-                } else {
-            ?>
+                    if (empty($donnees)) {
+                        echo "La page demandée n'existe pas...";
+                    } else {
+                        ?>
+
+            <!-- <div class="testimonial">
+                <div class="pic">
+                <img src="asset/img/cfr_profil_w3.svg">
+                </div>
+                <p class="description">
+                <?php //echo htmlspecialchars($donnees['description testimonails']) ?>
+                </p>
+                <h3 class="title"><?php //echo htmlspecialchars($donnees['nom']) ?></h3>
+                <small class="post"><?php //echo htmlspecialchars($donnees['']) ?></small>
+          </div> -->
+
+
+
+
                 <div class="bloc_message">
-                <p>Updated</p>
-                <?php echo htmlspecialchars($donnees['FORMATIONS']); 
-                ?>
+                
+            <?php echo htmlspecialchars($donnees['FORMATIONS']); ?>
                 
                 
                 </div>
 <?php
-        }
-    }
+                    }
+                }
         $req->closeCursor(); // Fin de requète SQL
 ?> 
 
