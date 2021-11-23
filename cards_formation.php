@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mon menu web">
     <link rel="icon" type="image" sizes="32x32" href="asset/">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formation_cards.css">
 
     <title>Menu contextuel</title>
 </head>
