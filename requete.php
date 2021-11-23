@@ -33,7 +33,7 @@
             ?>
                 <div class="bloc_message">
                 
-                <?php echo htmlspecialchars($donnees['ID']) . htmlspecialchars($donnees['FORMATIONS']) . htmlspecialchars($donnees['METHODE_PEDAGOGIQUE']) .  htmlspecialchars($donnees['PUBLIC_VISE']) . htmlspecialchars($donnees['PREREQUIS']) . htmlspecialchars($donnees['OBJECTIFS']) . "</br> </br> </br> </br>"; 
+                <?php echo htmlspecialchars($donnees['FORMATIONS']); 
                 ?>
                 
                 
