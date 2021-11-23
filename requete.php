@@ -20,7 +20,7 @@
                 }
                 
                 // $req = $bdd->query('SELECT id, titre, contenu, DATE_FORMAT(date_creation, "%d/%m/%Y à %Hh%imin%ssec") AS date FROM billets ORDER BY date DESC');
-                $req = $bdd->query('SELECT ID, FORMATIONS, METHODE_PEDAGOGIQUE, PUBLIC_VISE, PREREQUIS, OBJECTIFS FROM catalogue_formations ORDER BY date DESC');
+                $req = $bdd->query('SELECT ID, FORMATIONS, METHODE_PEDAGOGIQUE, PUBLIC_VISE, PREREQUIS, OBJECTIFS FROM catalogue_formations');
 
                 // table_name(ID, FORMATIONS, METHODE_PEDAGOGIQUE, PUBLIC_VISE, PREREQUIS, OBJECTIFS)
             ?>            
