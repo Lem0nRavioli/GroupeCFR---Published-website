@@ -32,7 +32,7 @@
                 } else {
             ?>
                 <div class="bloc_message">
-                
+                <p>Updated</p>
                 <?php echo htmlspecialchars($donnees['FORMATIONS']); 
                 ?>
                 
