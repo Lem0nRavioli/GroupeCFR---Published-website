@@ -695,7 +695,7 @@ m1490 0 l0 -905 -660 0 -660 0 0 905 0 905 660 0 660 0 0 -905z" />
                 <?php echo htmlspecialchars($donnees['FEEDBACK']); ?>
               </p>
               <h3 class="title"><?php echo htmlspecialchars($donnees['NOM']); ?></h3>
-              <small class="post"><?php echo htmlspecialchars($donnees['FORMATION']); ?> en <?php echo htmlspecialchars($donnees['TYPEFORMA']); ?></small>
+              <small class="post">Formation <?php echo htmlspecialchars($donnees['FORMATION']); ?> en <?php echo htmlspecialchars($donnees['TYPEFORMA']); ?></small>
             </div>
 
             <?php
