@@ -22,13 +22,13 @@
         <li id='help'>
             <h4 class="footer-list-header">Menu</h4>
         </li>
-        <li><a href='accueil.html' class="generic-anchor footer-list-anchor">Accueil</a></li>
-        <li><a href='qui_sommes_nous.html' class="generic-anchor footer-list-anchor">Qui Sommes-nous</a></li>
-        <li><a href='en_construction.html' class="generic-anchor footer-list-anchor">Nos formations</a></li>
-        <li><a href='funding_page.html' class="generic-anchor footer-list-anchor">Financement</a></li>
-        <li><a href='contact.html' class="generic-anchor footer-list-anchor">Contact</a></li>
-        <li><a href='faq.html' class="generic-anchor footer-list-anchor">FAQ</a></li>
-        <li><a href='blog.html' class="generic-anchor footer-list-anchor">Blog</a></li>
+        <li><a href='accueil.php' class="generic-anchor footer-list-anchor">Accueil</a></li>
+        <li><a href='qui_sommes_nous.php' class="generic-anchor footer-list-anchor">Qui Sommes-nous</a></li>
+        <li><a href='en_construction.php' class="generic-anchor footer-list-anchor">Nos formations</a></li>
+        <li><a href='funding_page.php' class="generic-anchor footer-list-anchor">Financement</a></li>
+        <li><a href='contact.php' class="generic-anchor footer-list-anchor">Contact</a></li>
+        <li><a href='faq.php' class="generic-anchor footer-list-anchor">FAQ</a></li>
+        <li><a href='blog.php' class="generic-anchor footer-list-anchor">Blog</a></li>
 
     </ul>
     <section class="footer-social-section flex-rw">
