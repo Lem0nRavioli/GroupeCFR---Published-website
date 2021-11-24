@@ -48,7 +48,7 @@
             <!-- https://formsubmit.co/ -->
             <form action="https://formsubmit.co/groupecfr3@gmail.com" method="POST" id="contact-form">
                 <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.html">
+                <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.php">
                 <p>
                     <label>Name</label>
                     <input type="text" name="name" id="name" required>

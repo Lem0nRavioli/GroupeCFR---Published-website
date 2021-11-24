@@ -15,8 +15,8 @@
         </li>
 
 
-        <li><a href='en_construction.html' class="generic-anchor footer-list-anchor">Cookies</a></li>
-        <li><a href='mentions_legales.html' class="generic-anchor footer-list-anchor">Mention légales</a></li>
+        <li><a href='en_construction.php' class="generic-anchor footer-list-anchor">Cookies</a></li>
+        <li><a href='mentions_legales.php' class="generic-anchor footer-list-anchor">Mention légales</a></li>
     </ul>
     <ul class="footer-list-top">
         <li id='help'>

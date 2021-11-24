@@ -127,11 +127,11 @@
                     <div class="renvoie">
                         <p>
                             Pour en savoir plus sur les modalités de financement, tous les détails sont sur notre page
-                            <a href="funding_page.html">Financement</a>
+                            <a href="funding_page.php">Financement</a>
                         </p>
                         <p>
                             N'hésitez pas à nous contacter pour tout renseignement via notre page <a
-                                href="contact.html">Contact</a>
+                                href="contact.php">Contact</a>
                         </p>
                     </div>
                     <div class="row">

@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Page d'accueil CFR. La société C.F.R - Centre Formation Recrutement a été créée en 2016 et détient l’autorisation préfectorale pour exercer dans le milieu de la formation professionnelle.">
+  <meta name="description" content="Page d'accueil CFR. La société C.F.R - Centre Formation Recrutement a été créée en 2016 et détient l’autorisation préfectorale pour exercer dans le milieu de la formation professionnelle.">
   <meta name=" robots" content=" follow">
   <meta name="author" content="CHATER Zhora">
   <meta name=" copyright" content=" CFR">
@@ -49,14 +48,14 @@
           <p class="text text_slide1"> <b> Séminaire​​ Entrepreneuriat à Dubai<br> du 08 au 15 mai 2022</b></p>
           <p class="text text2_slide1">Fournir les compétences de bases permettant
             la Création et/ou la Reprise d'entreprise<br>ainsi que son développement.</p>
-          <a href="contact.html" class="btn_lien">Contactez-nous</a>
+          <a href="contact.php" class="btn_lien">Contactez-nous</a>
         </div>
 
         <div class="slide num2">
           <img id="1" src="./asset/photo/2.jpg" alt="Réunion business plan">
           <p class="text text_slide3"> <b>Business Plan</b></p>
           <p class="text text2_slide2"> Fournir les compétences pour concevoir un business plan efficace</p>
-          <a href="contact.html" class="btn_lien">En savoir plus</a>
+          <a href="contact.php" class="btn_lien">En savoir plus</a>
         </div>
 
         <div class="slide num3">
@@ -64,21 +63,21 @@
           <p class="text text_slide3"> <b>Les Fondamentaux du Management</b></p>
           <p class="text text3_slide3">Fournir les clés pour vous accompagner et développer votre posture de dirigeant
           </p>
-          <a href="contact.html" class="btn_lien">En savoir plus</a>
+          <a href="contact.php" class="btn_lien">En savoir plus</a>
         </div>
 
         <div class="slide num4">
           <img id="1" src="./asset/photo/4.jpg" alt="Réunion marketing digital">
           <p class="text text_slide3"> <b> Marketing Digital</b></p>
           <p class="text text_slide4">Comprendre les concepts fondamentaux du marketing digital</p>
-          <a href="contact.html" class="btn_lien">En savoir plus</a>
+          <a href="contact.php" class="btn_lien">En savoir plus</a>
         </div>
 
         <div class="slide num5">
           <img id="1" src="./asset/photo/5.jpg" alt="Photo ordinateur développement">
           <p class="text text_slide3"><b> Développement Web</b></p>
           <p class="text text2_slide1">Communiquer, gérer et développer une base de données</p>
-          <a href="contact.html" class="btn_lien">En savoir plus</a>
+          <a href="contact.php" class="btn_lien">En savoir plus</a>
         </div>
       </div>
     </div>
@@ -116,7 +115,7 @@
                 désirant se former à l’un de nos domaines d’expertise. Ainsi nous nous adressons autant aux demandeurs
                 d’emploi qu’aux entreprises souhaitant former leur personnel ou tout autre personne souhaitant se
                 former.</p>
-              <a href="qui_sommes_nous.html">Read More</a>
+              <a href="qui_sommes_nous.php">Read More</a>
             </div>
           </div>
         </div>
@@ -185,8 +184,7 @@
             Langues
           </p>
           <div class="icone_thema">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-              viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M2936 5104 c-57 -21 -102 -58 -133 -111 -22 -37 -28 -62 -31 -128
@@ -273,13 +271,12 @@
           </div>
         </a>
 
-        <a href="en_construction.html" class="thema">
+        <a href="en_construction.php" class="thema">
           <p class="thema_description">
             Bureautique
           </p>
           <div class="icone_thema">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-              viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M3502 5110 c-628 -80 -1120 -531 -1254 -1153 -18 -84 -22 -134 -22
@@ -335,13 +332,12 @@ c-86 -87 -202 -177 -294 -228 -78 -44 -234 -109 -242 -101 -3 3 6 23 20 44 58
           </div>
         </a>
 
-        <a href="en_construction.html" class="thema">
+        <a href="en_construction.php" class="thema">
           <p class="thema_description">
             Développement Web
           </p>
           <div class="icone_thema">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-              viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M306 5109 c-62 -15 -153 -68 -197 -116 -22 -24 -55 -74 -72 -111
 l-32 -67 0 -1776 0 -1775 37 -76 c45 -91 103 -147 196 -191 l67 -32 636 -3
@@ -428,13 +424,12 @@ l-7 -53 79 0 79 0 12 51 c22 90 92 160 182 182 l51 12 0 77 0 78 -27 -1 c-16
           </div>
         </a>
 
-        <a href="en_construction.html" class="thema">
+        <a href="en_construction.php" class="thema">
           <p class="thema_description">
             Design Numérique
           </p>
           <div class="icone_thema">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-              viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M383 5105 c-182 -49 -320 -189 -368 -372 -23 -86 -23 -3200 0 -3286
@@ -483,13 +478,12 @@ c-177 0 -332 -4 -343 -9z" />
           </div>
         </a>
 
-        <a href="en_construction.html" class="thema">
+        <a href="en_construction.php" class="thema">
           <p class="thema_description">
             Finance
           </p>
           <div class="icone_thema">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-              viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M26 5094 l-26 -27 0 -2498 c0 -1809 3 -2505 11 -2522 6 -14 22 -30
@@ -539,13 +533,12 @@ l158 0 0 -1115z m-1917 931 c18 -7 46 -29 63 -48 60 -68 53 -159 -15 -221 -64
           </div>
         </a>
 
-        <a href="en_construction.html" class="thema">
+        <a href="en_construction.php" class="thema">
           <p class="thema_description">
             Management
           </p>
           <div class="icone_thema">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-              viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
               <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path d="M2410 5104 c-148 -32 -265 -97 -375 -208 -92 -93 -144 -177 -182
@@ -663,45 +656,44 @@ m1490 0 l0 -905 -660 0 -660 0 0 905 0 905 660 0 660 0 0 -905z" />
       <div class="col-md-12">
         <div id="testimonial-slider" class="owl-carousel">
 
-        <?php
-            try {
-              $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', 'ojtb5163_website_reader', 'oZnJ!!D}4ifz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-            } catch (Exception $e) {
-              die('Erreur : '.$e->getMessage());
-            }
-            $req = $bdd->query('SELECT ID, NOM, FORMATION, TYPEFORMA, AVATAR, FEEDBACK FROM CFR_FEEDBACK');
+          <?php
+          try {
+            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', 'ojtb5163_website_reader', 'oZnJ!!D}4ifz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+          } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+          }
+          $req = $bdd->query('SELECT ID, NOM, FORMATION, TYPEFORMA, AVATAR, FEEDBACK FROM CFR_FEEDBACK');
           ?>
           <?php
-            while ($donnees = $req->fetch()) {
-              if (empty($donnees)) {
+          while ($donnees = $req->fetch()) {
+            if (empty($donnees)) {
               echo "La page demandée n'existe pas...";
             } else {
           ?>
 
-            <div class="testimonial">
-              <div class="pic">
-                <img src="asset/img/<?php echo htmlspecialchars($donnees['AVATAR']); ?>">
+              <div class="testimonial">
+                <div class="pic">
+                  <img src="asset/img/<?php echo htmlspecialchars($donnees['AVATAR']); ?>">
+                </div>
+                <p class="description">
+                  <?php echo htmlspecialchars($donnees['FEEDBACK']); ?>
+                </p>
+                <h3 class="title"><?php echo htmlspecialchars($donnees['NOM']); ?></h3>
+                <small class="post">Formation <?php echo htmlspecialchars($donnees['FORMATION']); ?> en <?php echo htmlspecialchars($donnees['TYPEFORMA']); ?></small>
               </div>
-              <p class="description">
-                <?php echo htmlspecialchars($donnees['FEEDBACK']); ?>
-              </p>
-              <h3 class="title"><?php echo htmlspecialchars($donnees['NOM']); ?></h3>
-              <small class="post">Formation <?php echo htmlspecialchars($donnees['FORMATION']); ?> en <?php echo htmlspecialchars($donnees['TYPEFORMA']); ?></small>
-            </div>
 
-            <?php
-                  }
-              }
-              $req->closeCursor(); // Fin de requète SQL
-            ?>
+          <?php
+            }
+          }
+          $req->closeCursor(); // Fin de requète SQL
+          ?>
 
 
         </div>
       </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script src="js/accueil_feedback.js"></script>
   </div>
   <!-- fin feedback boxes -->

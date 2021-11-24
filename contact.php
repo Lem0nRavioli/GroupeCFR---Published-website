@@ -223,7 +223,7 @@
                     </label>
                     <p class="form_comment">*Champs obligatoires</p>
                     <br>
-                    <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.html">
+                    <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.php">
                     <input type="submit" class="submit_btn" value="Envoyer">
                 </fieldset>
             </form>

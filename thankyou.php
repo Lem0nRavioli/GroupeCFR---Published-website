@@ -33,7 +33,7 @@
         <h1>Votre email a bien été envoyé !</h1>
         <img src="./asset/icons/mail_icon.png" alt="Merci !" id="thankyoupic">
         <p id="thankyou_note">Nous vous contacterons dans les plus bref délais.</p>
-        <h1><a href="accueil.html">Page d'accueil.</a></h1>
+        <h1><a href="accueil.php">Page d'accueil.</a></h1>
     </div>
     <!-- Fin contenu -->
 

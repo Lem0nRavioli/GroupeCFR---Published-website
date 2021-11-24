@@ -30,7 +30,7 @@
     <div class="construction">
         <h1>En construction</h1>
         <img src="./asset/img/inProgess.png" alt="En construction" id="inprogesspic">
-        <a href="contact.html" class="btn_lien">Contactez-nous</a>
+        <a href="contact.php" class="btn_lien">Contactez-nous</a>
         <hr class="bande_blanche">
     </div>
     <!-- Fin contenu -->
