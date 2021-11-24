@@ -33,39 +33,7 @@
 <body id="main">
 
   <!-- navbar -->
-  <header class="header" id="navbar">
-    <script src="./js/navbar.js" defer></script>
-    <nav class="navbar">
-      <a href="accueil.html" class="logo">
-        <img src="asset/logos/CFR_Logo_Blanc.png" alt="Logo Groupe CFR Formation">
-      </a>
-      <ul class="nav_menu" id="menu_navbar">
-        <li class="nav_item">
-          <a href="qui_sommes_nous.html" class="nav_link">Qui sommes-nous</a>
-        </li>
-        <li class="nav_item">
-          <a href="en_construction.html" class="nav_link">Nos formations</a>
-        </li>
-        <li class="nav_item">
-          <a href="funding_page.html" class="nav_link">Financement</a>
-        </li>
-        <li class="nav_item">
-          <a href="contact.html" class="nav_link">Contact </a>
-        </li>
-        <li class="nav_item">
-          <a href="faq.html" class="nav_link">FAQ</a>
-        </li>
-        <li class="nav_item">
-          <a href="blog.html" class="nav_link">Blog</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
+  <?php include("navbar.php"); ?>
   <!-- fin navbar -->
 
   <!-- Début contenu -->
@@ -132,7 +100,30 @@
   <!-- fin carrousel -->
 
   <!-- section about us  -->
-  <section class="about_us_section">
+
+
+  <div id="contain">
+    <div id="card-container">
+      <div class="col-wrapper">
+        <div class="col col-1">
+          <div class="item">
+            <div class="item-img">
+              <img src="asset/img/Stats_cfr.webp">
+            </div>
+            <div class="item-desc">
+              <h2 class="item-heading">Qui sommes nous?</h2>
+              <p>CFR est un centre de formation pluridisciplinaire qui a pour mission de former l’ensemble des profils
+                désirant se former à l’un de nos domaines d’expertise. Ainsi nous nous adressons autant aux demandeurs
+                d’emploi qu’aux entreprises souhaitant former leur personnel ou tout autre personne souhaitant se
+                former.</p>
+              <a href="qui_sommes_nous.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <section class="about_us_section">
     <img class="about_us_img" src="asset/img/Aboutus-1.jpg" alt="Une image d'illustration de travail de bureau">
     <div class="about_us_text">
       <h1>Qui sommes-nous ?</h1>
@@ -142,7 +133,7 @@
         tout autre personne souhaitant se former.</p>
       <p><a href="qui_sommes_nous.html" class="about_us_link">En savoir plus</a></p>
     </div>
-  </section>
+  </section>*/ -->
   <!-- fin section about us  -->
 
   <!-- Bannière stats -->
@@ -672,7 +663,7 @@ m1490 0 l0 -905 -660 0 -660 0 0 905 0 905 660 0 660 0 0 -905z" />
       <div class="col-md-12">
         <div id="testimonial-slider" class="owl-carousel">
 
-          <?php
+        <?php
             try {
               $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', 'ojtb5163_website_reader', 'oZnJ!!D}4ifz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
             } catch (Exception $e) {
@@ -718,55 +709,7 @@ m1490 0 l0 -905 -660 0 -660 0 0 905 0 905 660 0 660 0 0 -905z" />
   <!-- Fin contenu -->
 
   <!-- footer -->
-  <footer class="footer-container">
-
-    <ul class="footer-list-top">
-      <li>
-        <h4 class="footer-list-header">ADRESSES</h4>
-      </li>
-      <li> <a href=""> 154 TER avenue Victor Hugo ,75016 PARIS</a></li>
-      <li> <a href=""> 94 rue Servient,69003 LYON</a></li>
-      <li> <a href=""> 2 rue le Corbusier, 95190 GOUSSAINVILLE</a></li>
-
-    </ul>
-    <ul class="footer-list-top">
-      <li>
-        <h4 class="footer-list-header">INFORMATIONS LEGALES</h4>
-      </li>
-
-
-      <li><a href='en_construction.html' class="generic-anchor footer-list-anchor">Cookies</a></li>
-      <li><a href='mentions_legales.html' class="generic-anchor footer-list-anchor">Mention légales</a></li>
-    </ul>
-    <ul class="footer-list-top">
-      <li id='help'>
-        <h4 class="footer-list-header">Menu</h4>
-      </li>
-      <li><a href='accueil.html' class="generic-anchor footer-list-anchor">Accueil</a></li>
-      <li><a href='qui_sommes_nous.html' class="generic-anchor footer-list-anchor">Qui Sommes-nous</a></li>
-      <li><a href='en_construction.html' class="generic-anchor footer-list-anchor">Nos formations</a></li>
-      <li><a href='funding_page.html' class="generic-anchor footer-list-anchor">Financement</a></li>
-      <li><a href='contact.html' class="generic-anchor footer-list-anchor">Contact</a></li>
-      <li><a href='faq.html' class="generic-anchor footer-list-anchor">FAQ</a></li>
-      <li><a href='blog.html' class="generic-anchor footer-list-anchor">Blog</a></li>
-
-    </ul>
-    <section class="footer-social-section flex-rw">
-      <span class="footer-social-overlap footer-social-connect">
-        CONNECT <span class="footer-social-small">with</span> US</span>
-      <span class="footer-social-overlap footer-social-icons-wrapper">
-        <a href="https://www.facebook.com/CFRformation/" class="generic-anchor" target="_blank" title="Facebook"
-          itemprop="significantLink"><img src="./asset/logos/facebook_icon-icons.com_59205.png" alt=""></a>
-        <a href="https://www.instagram.com/cfrformationrecrutement/?utm_medium=copy_link" class="generic-anchor"
-          target="_blank" title="Instagram" itemprop="significantLink"><img
-            src="./asset/logos/instagram_logo_icon_186894.png" alt=""></a>
-        <a href="https://www.linkedin.com/company/centre-formation-recrutement/" class="generic-anchor" target="_blank"
-          title="Youtube" itemprop="significantLink"><img src="./asset/logos/linkedin_icon-icons.com_65929.png"
-            alt=""></a>
-
-      </span>
-    </section>
-  </footer>
+  <?php include("footer.php"); ?>
   <!-- fin footer -->
 
 
