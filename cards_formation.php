@@ -20,13 +20,13 @@
   <title>Menu contextuel</title>
 </head>
 
-<body>
+<body id="main">
 
   <!-- navbar -->
   <?php include("navbar.php"); ?>
   <!-- fin navbar -->
 
-  <div class="main">
+  <div class="container_cards">
     <ul class="cards">
 
       <?php
