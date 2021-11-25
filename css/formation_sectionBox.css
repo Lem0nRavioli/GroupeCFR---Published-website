@@ -8,7 +8,7 @@
 
   font-size:36px;
   font-weight:bold;
-  padding-top:20px;  
+  padding-top:40px;  
   position:relative;
   width:100%;
 
@@ -38,12 +38,7 @@
 
 #flip div div {
   background:#004CAE;
-}
-#flip div:first-child div {
-  background:#004CAE;
-}
-#flip div:last-child div {
-  background:#004CAE;
+border-radius: 2rem;
 }
 
 @keyframes show {
@@ -93,6 +88,17 @@
   font-size:12px;
   color:#999;
   margin-top:200px;
+}
+
+@media screen and (max-width: 450px){
+  #containerre {
+
+    font-size:20px;
+    padding-top:20px;  
+  }
+  #flip > div > div {
+    margin-bottom:45px;
+  }
 }
 
 /* ------------------- */
