@@ -31,26 +31,26 @@
   <!-- Début contenu -->
 
   <!-- Début blog -->
-  <?php 
-    $monFichier = fopen('./asset/user.txt', 'r');
-    $login = trim(fgets($monFichier));
-    $mdp = trim(fgets($monFichier));
+  <?php
+  $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
+  $login = trim(fgets($monFichier));
+  $mdp = trim(fgets($monFichier));
 
-    try {
-        $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-    } 
-    catch (Exception $e) {
-        die('Erreur : '.$e->getMessage());
-    }
+
+  try {
+    $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+  } catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+  }
   ?>
 
   <div class="blog">
 
 
     <?php
-      $req=$bdd->query('SELECT id_blog, DATE_FORMAT(date_blog, "%d/%m/%Y") AS date, titre, lien_source, texte_source, description_blog, lien_article, photo_blog FROM blog');
+    $req = $bdd->query('SELECT id_blog, DATE_FORMAT(date_blog, "%d/%m/%Y") AS date, titre, lien_source, texte_source, description_blog, lien_article, photo_blog FROM blog');
 
-      while ($donnees = $req->fetch()) {
+    while ($donnees = $req->fetch()) {
     ?>
 
 
@@ -69,9 +69,9 @@
           <div class="card-content">
             <h1 class="title"><?php echo htmlspecialchars($donnees['titre']); ?></h1>
             <h2 class="subtitle"><a href="<?php echo htmlspecialchars($donnees['lien_source']); ?>" target="_blank">Depuis
-            <?php echo htmlspecialchars($donnees['texte_source']); ?></a></h2>
+                <?php echo htmlspecialchars($donnees['texte_source']); ?></a></h2>
             <p class="description">
-            <?php echo htmlspecialchars($donnees['description_blog']); ?>
+              <?php echo htmlspecialchars($donnees['description_blog']); ?>
             </p>
             <div class="cta">
               <a href="<?php echo htmlspecialchars($donnees['lien_article']); ?>" target="_blank">En savoir plus
@@ -81,12 +81,12 @@
         </div>
       </div>
 
-    <?php 
-      }
-      
-      $req->closeCursor(); // Fin de requète SQL
-      fclose($monFichier);
-      
+    <?php
+    }
+
+    $req->closeCursor(); // Fin de requète SQL
+    fclose($monFichier);
+
     ?>
   </div>
   <!-- fin blog -->
@@ -103,4 +103,3 @@
 </body>
 
 </html>
-
