@@ -115,6 +115,7 @@ html{
   line-height: 1.5;
   margin-bottom: 1.25rem;    
   font-weight: 400;
+  min-height: 45px;
 }
 .made_by{
   font-weight: 400;
