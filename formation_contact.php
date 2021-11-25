@@ -30,16 +30,16 @@
 
     <!-- Début formation contact -->
     <?php
-        $monFichier = fopen('../cfr_db_reader/user_test.txt', 'r');
-        $login = trim(fgets($monFichier));
-        $mdp = trim(fgets($monFichier));
-        
-        try {
-            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_testDB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-        } 
-        catch (Exception $e) {
-            die('Erreur : '.$e->getMessage());
-        }
+            $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
+            $login = trim(fgets($monFichier));
+            $mdp = trim(fgets($monFichier));        
+            
+
+          try {
+            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+          } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+          }
 
         $id = $_POST['formation'];
 
