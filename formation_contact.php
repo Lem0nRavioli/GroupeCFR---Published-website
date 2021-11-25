@@ -43,7 +43,7 @@
 
         $id = $_POST['formation'];
 
-        $req=$bdd->prepare('SELECT id_formation, intitule, pre_requis, objectifs, presentiel, distanciel, e_learning, financement FROM liste_formations 
+        $req=$bdd->prepare('SELECT id_formation, code_cfr, categorie, intitule, pre_requis, objectifs, presentiel, distanciel, e_learning, financement FROM liste_formations 
                                         WHERE id_formation = ?');
         $req->execute(array($id));
 
@@ -78,21 +78,20 @@
             </ul>
         </div>
 
-    <?php 
-    } 
 
-    $req->closeCursor(); // Fin de requète SQL
-    fclose($monFichier); 
-    
-    ?>
 
         <div class="contact">
             <h3>S'inscrire à la formation</h3>
             <!-- doc technique -->
             <!-- https://formsubmit.co/ -->
-            <form action="https://formsubmit.co/groupecfr3@gmail.com" method="POST" id="contact-form">
+            <!-- groupecfr3@gmail.com -->
+            <form action="https://formsubmit.co/fifec22869@ineedsa.com" method="POST" id="contact-form">
                 <input type="hidden" name="_subject" value="New submission!">
                 <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.html">
+                <input type="hidden" name="code_cfr" value="<?php echo htmlspecialchars($donnees['code_cfr']); ?>">
+                <input type="hidden" name="categorie" value="<?php echo htmlspecialchars($donnees['categorie']); ?>">
+                <input type="hidden" name="nom_formation" value="<?php echo htmlspecialchars($donnees['intitule']); ?>">
+
                 <p>
                     <label>Name</label>
                     <input type="text" name="name" id="name" required>
@@ -124,6 +123,12 @@
 
             </form>
         </div>
+
+        <?php 
+        } 
+            $req->closeCursor(); // Fin de requète SQL
+            fclose($monFichier);             
+        ?>
 
     </div>
     </div>

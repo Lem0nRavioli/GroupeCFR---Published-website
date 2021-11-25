@@ -91,6 +91,7 @@
     .testimonial {
         padding: 20px;
         text-align: center;
+        min-height: 450px;
     }
     .testimonial .pic {
         display: block;
