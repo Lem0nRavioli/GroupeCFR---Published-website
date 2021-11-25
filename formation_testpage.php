@@ -41,7 +41,7 @@
           <div><div> <a href="./cards_formation.php?categorie=devweb">Développement Web</a></div></div>
           <div><div> <a href="./cards_formation.php?categorie=desnum">Design Numérique</a></div></div>
         </div>
-        <!-- &darr; -->
+        &darr;
       </div>
 
 
