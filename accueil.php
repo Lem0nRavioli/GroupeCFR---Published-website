@@ -657,8 +657,12 @@ m1490 0 l0 -905 -660 0 -660 0 0 905 0 905 660 0 660 0 0 -905z" />
         <div id="testimonial-slider" class="owl-carousel">
 
           <?php
+            $monFichier = fopen('user.txt', 'r');
+            $login = trim(fgets($monFichier));
+            $mdp = trim(fgets($monFichier));
+
           try {
-            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', 'ojtb5163_website_reader', 'oZnJ!!D}4ifz', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
           } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
           }
