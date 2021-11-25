@@ -1,12 +1,6 @@
-
-/* theme css */
-/* * {
-  box-sizing: border-box;
-} */
-
 .wrapper {
-
-  margin: 2rem;
+  width: 50%;
+  margin:  2rem auto;
   background: #3952a3;
   color: #485e74;
   line-height: 1.6;
@@ -25,7 +19,7 @@
 .wrapper ul {
   list-style: none;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .wrapper h3 {
 
@@ -89,7 +83,7 @@
 }
 
 .contact h3{
-    font-size: 3rem;
+    font-size: 2.3rem;
 }
 
 
@@ -100,6 +94,7 @@
 .contact form button,
 .contact form input,
 .contact form textarea {
+  box-sizing: border-box;
   width: 100%;
   padding: 1em;
   border: solid 1px #004CAE;
@@ -125,6 +120,56 @@
   color: #ffffff;
   outline: 0;
   transition: background-color 2s ease-out;
+}
+.contact label{
+  font-size: 1.6rem;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .wrapper {
+    width: 70%;
+
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+
+  }
+}
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: auto;
+
+  }
 }
 
 
