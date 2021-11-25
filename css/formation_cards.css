@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 html{
     scroll-behavior: smooth;
@@ -7,12 +6,14 @@ html{
 
 
 /* Design */
-*,
-*::before,
-*::after {
+.cards, .cards_item, .main, .btn, .main img, .card, .card_content,
+.card_text, .card_title, .main h1,
+.cards::before, .cards_item::before, .main::before, .btn::before, .main img::before, .card::before, .card_content::before,
+.card_text::before, .card_title::before, .main h1::before,
+.cards::after, .cards_item::after, .main::after, .btn::after, .main img::after, .card::after, .card_content::after,
+.card_text::after, .card_title::after, .main h1::after {
   box-sizing: border-box;
 }
-
 
 
 .main{
@@ -36,7 +37,7 @@ html{
 }
 
 .main img {
-  height: auto;
+  height: 238px;
   max-width: 100%;
   vertical-align: middle;
 }
@@ -120,5 +121,3 @@ html{
   margin-top: 35px;
   text-align: center;
 }
-
-  
