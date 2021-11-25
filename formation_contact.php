@@ -33,9 +33,9 @@
         $monFichier = fopen('../cfr_db_reader/user_test.txt', 'r');
         $login = trim(fgets($monFichier));
         $mdp = trim(fgets($monFichier));
-
+        
         try {
-            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_testDB', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_testDB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         } 
         catch (Exception $e) {
             die('Erreur : '.$e->getMessage());
