@@ -43,7 +43,7 @@
 
       $categorie = htmlspecialchars($_GET['categorie']);
 
-      $req_formations = $bdd->prepare('SELECT id_formation, intitule, pre_requis, objectifs, presentiel, distanciel, e_learning, nom_photo FROM liste_formations WHERE categorie = ?');
+      $req_formations = $bdd->prepare('SELECT id_formation, intitule, pre_requis, objectifs, presentiel, distanciel, e_learning, nom_photo, alt_value FROM liste_formations WHERE categorie = ?');
       $req_formations->execute(array($categorie));
 
       if ($categorie == "langues" || $categorie == "bureautique" || $categorie == "finance" || $categorie == "management" || $categorie == "devweb" || $categorie == "desnum") {
@@ -51,7 +51,7 @@
       ?>
           <li class="cards_item">
             <div class="card">
-              <div class="card_image"><img src="./asset/photo_cards/<?php echo htmlspecialchars($donnees['nom_photo']); ?>"></div>
+              <div class="card_image"><img src="./asset/photo_cards/<?php echo htmlspecialchars($donnees['nom_photo']); ?>" alt="<?php echo htmlspecialchars($donnees['alt_value']); ?>"></div>
               <div class="card_content">
                 <h2 class="card_title"><?php echo htmlspecialchars($donnees['intitule']); ?></h2>
                 <p class="card_text"> Prérequis : <?php echo htmlspecialchars($donnees['pre_requis']); ?></p>

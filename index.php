@@ -669,7 +669,7 @@ c-177 0 -332 -4 -343 -9z" />
           } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
           }
-          $req = $bdd->query('SELECT ID, NOM, FORMATION, TYPEFORMA, AVATAR, FEEDBACK FROM CFR_FEEDBACK');
+          $req = $bdd->query('SELECT ID, NOM, FORMATION, TYPEFORMA, AVATAR, FEEDBACK, ALT_VALUE FROM CFR_FEEDBACK');
           ?>
           <?php
           while ($donnees = $req->fetch()) {
@@ -680,7 +680,7 @@ c-177 0 -332 -4 -343 -9z" />
 
               <div class="testimonial">
                 <div class="pic">
-                  <img src="asset/img/<?php echo htmlspecialchars($donnees['AVATAR']); ?>">
+                  <img src="asset/img/<?php echo htmlspecialchars($donnees['AVATAR']); ?>" alt="<?php echo htmlspecialchars($donnees['ALT_VALUE']); ?>">
                 </div>
                 <p class="description">
                   <?php echo htmlspecialchars($donnees['FEEDBACK']); ?>

@@ -48,7 +48,7 @@
 
 
     <?php
-    $req = $bdd->query('SELECT id_blog, DATE_FORMAT(date_blog, "%d/%m/%Y") AS date, titre, lien_source, texte_source, description_blog, lien_article, photo_blog FROM blog');
+    $req = $bdd->query('SELECT id_blog, DATE_FORMAT(date_blog, "%d/%m/%Y") AS date, titre, lien_source, texte_source, description_blog, lien_article, photo_blog, alt_value FROM blog');
 
     while ($donnees = $req->fetch()) {
     ?>
@@ -57,7 +57,12 @@
       <div class="all_items">
         <div class="card">
           <div class="card-image">
-            <div class="background-image background-image1" style="background: url('./asset/blog_page/<?php echo htmlspecialchars($donnees['photo_blog']); ?>')  center  no-repeat; background-size: contain;"></div>
+            <div 
+              class="background-image background-image1" 
+              style="background: url('./asset/blog_page/<?php echo htmlspecialchars($donnees['photo_blog']); ?>')  center  no-repeat; background-size: contain;"
+              alt="<?php echo htmlspecialchars($donnees['alt_value']); ?>"
+              >
+            </div>
             <div class="publication-details">
               <a href="https://www.groupecfr.com/accueil.html" class="author">
                 <i class="far fa-user"></i>
