@@ -9,7 +9,7 @@
                 <a href="qui_sommes_nous.php" class="nav_link">Qui sommes-nous</a>
             </li>
             <li class="nav_item">
-                <a href="en_construction.php" class="nav_link">Nos formations</a>
+                <a href="formation.php" class="nav_link">Nos formations</a>
             </li>
             <li class="nav_item">
                 <a href="funding_page.php" class="nav_link">Financement</a>
