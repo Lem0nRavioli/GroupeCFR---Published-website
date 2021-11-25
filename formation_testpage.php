@@ -37,7 +37,7 @@
           <div><div> <a href="./cards_formation.php?categorie=langues">Langues</a></div></div>
           <div><div> <a href="./cards_formation.php?categorie=finance"> Finances</a> </div></div>
           <div><div> <a href="./cards_formation.php?categorie=management"> Management</a></div></div>
-          <div><div> <a href="./cards_formation.php?categorie=bureautique"> Bureautique </a>  <</div></div>
+          <div><div> <a href="./cards_formation.php?categorie=bureautique"> Bureautique </a></div></div>
           <div><div> <a href="./cards_formation.php?categorie=devweb"> Développement Web</a></div></div>
           <div><div> <a href="./cards_formation.php?categorie=desnum"> Design Numérique</a></div></div>
         </div>
