@@ -29,70 +29,26 @@
     <!-- Début contenu -->
 
     <!-- Début formation contact -->
-    <?php
-        $monFichier = fopen('../cfr_db_reader/user_test.txt', 'r');
-        $login = trim(fgets($monFichier));
-        $mdp = trim(fgets($monFichier));
-
-        try {
-            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_testDB', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-        } 
-        catch (Exception $e) {
-            die('Erreur : '.$e->getMessage());
-        }
-
-        $id = $_POST['formation'];
-
-        $req=$bdd->prepare('SELECT id_formation, intitule, pre_requis, objectifs, presentiel, distanciel, e_learning, financement FROM liste_formations 
-                                        WHERE id_formation = ?');
-        $req->execute(array($id));
-
-        while ($donnees = $req->fetch()) {
-    ?>
-
     <div class="wrapper">
         <div class="company-info">
-            <h3><?php echo htmlspecialchars($donnees['intitule']); ?></h3>
+            <h3>Formation</h3>
+
             <ul>
-                <li><i class="fas fa-euro-sign"></i><?php echo htmlspecialchars($donnees['objectifs']); ?></li><br>
-                <li><i class="fas fa-calendar-alt"></i>Méthode pédagogique :
-                <?php 
-                    if ($donnees['presentiel'] != 0) {
-                      echo "<br> Présentiel - ";
-                    } 
-                    if ($donnees['distanciel'] != 0) {
-                      echo "Distanciel ";
-                    }
-                    if ($donnees['e_learning'] != 0 && $donnees['presentiel'] != 0 && $donnees['distanciel'] != 0) {
-                      echo "- E-Learning";
-                    }
-                    elseif ($donnees['e_learning'] != 0 && $donnees['presentiel'] == 0 && $donnees['distanciel'] == 0) {
-                      echo "E-Learning";
-                    }            
-                ?> </li><br>
-                <li><i class="fas fa-poll"></i>Prérequis : <?php echo htmlspecialchars($donnees['pre_requis']); ?> </li><br>
-                <li><i class="fas fa-poll"></i>Mode de financement : <?php echo htmlspecialchars($donnees['financement']); ?> </li><br>
-                <li><i class="fa fa-road"></i> 154 TER avenue Victor Hugo</li>
-                <li><i class="fa fa-phone"></i> (+33)637189785</li>
+                <li><i class="fas fa-euro-sign"></i> Tarif :</li>
+                <li><i class="fas fa-calendar-alt"></i> Durée :</li>
+                <li> <i class="fas fa-poll"></i> CPF :</li>
+                 <li><i class="fa fa-road"></i> 154 TER avenue Victor Hugo 75016</li>
+                <li><i class="fa fa-phone"></i> 06 37 18 97 85</li>
                 <li><i class="fa fa-envelope"></i> contact@groupecfr.fr</li>
             </ul>
         </div>
-
-    <?php 
-    } 
-
-    $req->closeCursor(); // Fin de requète SQL
-    fclose($monFichier); 
-    
-    ?>
-
         <div class="contact">
             <h3>S'inscrire à la formation</h3>
             <!-- doc technique -->
             <!-- https://formsubmit.co/ -->
             <form action="https://formsubmit.co/groupecfr3@gmail.com" method="POST" id="contact-form">
                 <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.html">
+                <input type="hidden" name="_next" value="http://groupecfr.com/thankyou.php">
                 <p>
                     <label>Name</label>
                     <input type="text" name="name" id="name" required>

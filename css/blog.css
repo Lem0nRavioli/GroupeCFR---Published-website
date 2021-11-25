@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 
 /* theme css */
@@ -60,20 +59,20 @@
 
 /* article 1*/
 
-.background-image1{
-    background: url("../asset/blog_page/FNE_blog.jpg")  center  no-repeat;
+/* .background-image1{
+    background: url("../asset/blog_page/")  center  no-repeat;
     background-size: cover;
-    
-}
+}  */
+
 /* article 2*/
 
-.background-image2{
+/* .background-image2{
     background: url("../asset/blog_page/cpf.png")  center  no-repeat;
     background-size: contain;
-}
+} */
 /* article 3*/
 
-.background-image3{
+/* .background-image3{
     background: url("../asset/blog_page/opco.png")  center  no-repeat;
     background-size: contain;
 }
@@ -81,7 +80,7 @@
 .background-image4{
   background: url("../asset/blog_page/OPCO_blog.jpg")  center  no-repeat;
   background-size: cover;
-}
+} */
 
 
 
