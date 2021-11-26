@@ -22,20 +22,20 @@
 
 <body id="main">
 
-<!-- navbar -->
-<?php include("navbar.php"); ?>
+  <!-- navbar -->
+  <?php include("navbar.php"); ?>
   <!-- fin navbar -->
   <?php
-    $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
-    $login = trim(fgets($monFichier));
-    $mdp = trim(fgets($monFichier));
+  $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
+  $login = trim(fgets($monFichier));
+  $mdp = trim(fgets($monFichier));
 
 
-    try {
-      $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-    } catch (Exception $e) {
-      die('Erreur : ' . $e->getMessage());
-    }
+  try {
+    $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+  } catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+  }
 
   $categorie = htmlspecialchars($_GET['categorie']);
 
@@ -55,12 +55,13 @@
           <a href="formation.php"><img src="./asset/icons/long-arrow-left.svg" class="icofont-long-arrow-left"></img><span>Nos formations</span></a>
           <h1 id="titre_cards_formations">
             <?php
-              while ($en_tete = $req_entete->fetch()) {
-               echo htmlspecialchars($en_tete['titre']); 
+            while ($en_tete = $req_entete->fetch()) {
+              echo htmlspecialchars($en_tete['titre']);
             ?>
           </h1>
         </div>
-        <p id="intro_text"><?php echo htmlspecialchars($en_tete['texte_description']); }?></p>
+        <p id="intro_text"><?php echo htmlspecialchars($en_tete['texte_description']);
+                          } ?></p>
       </div>
     </div>
     <div class="container_cards">
@@ -105,9 +106,9 @@
         header('Location: accueil_formation.php');
       }
 
-        $req_formations->closeCursor(); // Fin de requète SQL
-        $req_entete->closeCursor();
-        fclose($monFichier);
+      $req_formations->closeCursor(); // Fin de requète SQL
+      $req_entete->closeCursor();
+      fclose($monFichier);
       ?>
 
       </ul>
