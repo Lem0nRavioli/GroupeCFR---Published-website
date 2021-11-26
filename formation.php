@@ -20,6 +20,7 @@
 
   <!-- page related links  -->
   <link rel="stylesheet" href="./css/formation_sectionBox.css">
+  <link rel="stylesheet" href="./css/formation_header.css">
 
   <title>Groupe CFR - Accueil</title>
 </head>
@@ -32,11 +33,37 @@
 
   <!-- Début contenu -->
 
+  <!-- formation header -->
+  <div id=containerre>
+    <h1>Nos formations</h1>
+    <div id=flip>
+      <div>
+        <div> <a href="./cards_formation.php?categorie=langues">Langues</a></div>
+      </div>
+      <div>
+        <div> <a href="./cards_formation.php?categorie=finance">Finances</a> </div>
+      </div>
+      <div>
+        <div> <a href="./cards_formation.php?categorie=management">Management</a></div>
+      </div>
+      <div>
+        <div> <a href="./cards_formation.php?categorie=bureautique">Bureautique</a></div>
+      </div>
+      <div>
+        <div> <a href="./cards_formation.php?categorie=devweb">Développement Web</a></div>
+      </div>
+      <div>
+        <div> <a href="./cards_formation.php?categorie=desnum">Design Numérique</a></div>
+      </div>
+    </div>
+    &darr;
+  </div>
+  <!-- fin formation header  -->
 
   <!-- section boxes -->
   <div class="formationBox">
     <hr class="bande_blanche">
-    <h1 id="formationBoxTitle">Nos formations</h1>
+    <!-- <h1 id="formationBoxTitle">Nos formations</h1> -->
     <div class="container_thema">
       <div class="zone_thema">
         <a href="./formation_cards.php?categorie=langues" class="thema">
