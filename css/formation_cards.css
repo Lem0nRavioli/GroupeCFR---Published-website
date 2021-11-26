@@ -57,7 +57,9 @@ html{
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: #f0c95f;
+  color: #004CAE;
+  font-weight: bold;
 }
 
 .cards {
@@ -72,6 +74,13 @@ html{
   display: flex;
   padding: 1rem;
 }
+
+.cards_item:hover .btn {
+  background-color: #f0c95f;
+  color: #004CAE;
+  font-weight: bold;
+}
+
 
 @media (min-width: 40rem) {
   .cards_item {
@@ -122,4 +131,140 @@ html{
   font-size: 13px;
   margin-top: 35px;
   text-align: center;
+}
+
+
+.intro_cards {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0c95f;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border-radius: 0 0 0.4em 0.4em;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  animation: stickAnim 1s;
+}
+
+.btn_titre {
+  display: flex;
+  width: 100%;
+}
+
+.btn_titre a {
+  position: absolute;
+  display: flex;
+  color: #004CAE;
+  padding: 0 0.6rem 0 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  
+  cursor: pointer;
+  border: 1px solid #004CAE;
+  background: transparent;
+  z-index: 50;
+  margin-top: 20px;
+}
+.btn_titre a:hover {
+  position: absolute;
+  display: flex;
+  color: #004CAE;
+  padding: 0 0.6rem 0 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  
+  cursor: pointer;
+  border: 1px solid #004CAE;
+  background: transparent;
+  z-index: 50;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.icofont-long-arrow-left {
+  width: 50px;
+  height: auto;
+}
+
+.btn_titre a span {
+  margin: auto;
+  font-weight: 700;
+}
+
+#titre_cards_formations {
+  font-size: 2.6em;
+  font-weight: bolder;
+  text-align: center;
+  border-bottom: 2px solid #004CAE;
+  width: 100%;
+}
+
+#intro_text {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+@keyframes stickAnim {
+	0% {
+		transform: translateY(-186px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
+@media only screen and (max-width: 925px) {
+  .btn_titre a {
+    font-size: 10px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  .btn_titre a:hover {
+    font-size: 10px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  .icofont-long-arrow-left {
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn_titre a {
+    margin-top: 25px;
+  }
+  #titre_cards_formations {
+    font-size: 2em;
+  }
+  
+  #intro_text {
+    margin-top: 0;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .btn_titre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn_titre a {
+    position: static;
+  }
+  .btn_titre a:hover {
+    position: static;
+  }
 }

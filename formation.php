@@ -39,7 +39,7 @@
     <h1 id="formationBoxTitle">Nos formations</h1>
     <div class="container_thema">
       <div class="zone_thema">
-        <a href="./cards_formation.php?categorie=langues" class="thema">
+        <a href="./formation_cards.php?categorie=langues" class="thema">
           <p class="thema_description">
             Langues
           </p>
@@ -131,7 +131,7 @@
           </div>
         </a>
 
-        <a href="./cards_formation.php?categorie=bureautique" class="thema">
+        <a href="./formation_cards.php?categorie=bureautique" class="thema">
           <p class="thema_description">
             Bureautique
           </p>
@@ -192,7 +192,7 @@ c-86 -87 -202 -177 -294 -228 -78 -44 -234 -109 -242 -101 -3 3 6 23 20 44 58
           </div>
         </a>
 
-        <a href="./cards_formation.php?categorie=devweb" class="thema">
+        <a href="./formation_cards.php?categorie=devweb" class="thema">
           <p class="thema_description">
             Développement Web
           </p>
@@ -284,7 +284,7 @@ l-7 -53 79 0 79 0 12 51 c22 90 92 160 182 182 l51 12 0 77 0 78 -27 -1 c-16
           </div>
         </a>
 
-        <a href="./cards_formation.php?categorie=desnum" class="thema">
+        <a href="./formation_cards.php?categorie=desnum" class="thema">
           <p class="thema_description">
             Design Numérique
           </p>
@@ -338,7 +338,7 @@ c-177 0 -332 -4 -343 -9z" />
           </div>
         </a>
 
-        <a href="./cards_formation.php?categorie=finance" class="thema">
+        <a href="./formation_cards.php?categorie=finance" class="thema">
           <p class="thema_description">
             Finance
           </p>
@@ -393,7 +393,7 @@ l158 0 0 -1115z m-1917 931 c18 -7 46 -29 63 -48 60 -68 53 -159 -15 -221 -64
           </div>
         </a>
 
-        <a href="./cards_formation.php?categorie=management" class="thema">
+        <a href="./formation_cards.php?categorie=management" class="thema">
           <p class="thema_description">
             Management
           </p>
