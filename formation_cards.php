@@ -22,36 +22,59 @@
 
 <body id="main">
 
-  <!-- navbar -->
-  <?php include("navbar.php"); ?>
+<!-- navbar -->
+<?php include("navbar.php"); ?>
   <!-- fin navbar -->
-
-  <div class="container_cards">
-    <ul class="cards">
-
-      <?php
-      $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
-      $login = trim(fgets($monFichier));
-      $mdp = trim(fgets($monFichier));
+  <?php
+    $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
+    $login = trim(fgets($monFichier));
+    $mdp = trim(fgets($monFichier));
 
 
-      try {
-        $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-      } catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
-      }
+    try {
+      $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    } catch (Exception $e) {
+      die('Erreur : ' . $e->getMessage());
+    }
 
-      $categorie = htmlspecialchars($_GET['categorie']);
+  $categorie = htmlspecialchars($_GET['categorie']);
 
-      $req_formations = $bdd->prepare('SELECT id_formation, intitule, pre_requis, objectifs, presentiel, distanciel, e_learning, nom_photo, alt_value FROM liste_formations WHERE categorie = ?');
-      $req_formations->execute(array($categorie));
+  $req_formations = $bdd->prepare('SELECT id_formation, intitule, pre_requis, objectifs, presentiel, distanciel, e_learning, nom_photo, alt_value FROM liste_formations WHERE categorie = ?');
+  $req_formations->execute(array($categorie));
 
-      if ($categorie == "langues" || $categorie == "bureautique" || $categorie == "finance" || $categorie == "management" || $categorie == "devweb" || $categorie == "desnum") {
+  $req_entete = $bdd->prepare('SELECT id_en_tete, categorie, titre, texte_description FROM en_tete_liste_formation WHERE categorie = ?');
+  $req_entete->execute(array($categorie));
+
+
+  if ($categorie == "langues" || $categorie == "bureautique" || $categorie == "finance" || $categorie == "management" || $categorie == "devweb" || $categorie == "desnum") {
+  ?>
+
+    <div class="page_cards_container">
+      <div class="intro_cards">
+        <div class="btn_titre">
+          <a href="formation.php"><img src="./asset/icons/long-arrow-left.svg" class="icofont-long-arrow-left"></img><span>Nos formations</span></a>
+          <h1 id="titre_cards_formations">
+            <?php
+              while ($en_tete = $req_entete->fetch()) {
+               echo htmlspecialchars($en_tete['titre']); 
+            ?>
+          </h1>
+        </div>
+        <p id="intro_text"><?php echo htmlspecialchars($en_tete['texte_description']); }?></p>
+      </div>
+    </div>
+    <div class="container_cards">
+      <ul class="cards">
+
+        <?php
+
         while ($donnees = $req_formations->fetch()) {
-      ?>
+        ?>
           <li class="cards_item">
             <div class="card">
-              <div class="card_image"><img src="./asset/photo_cards/<?php echo htmlspecialchars($donnees['nom_photo']); ?>" alt="<?php echo htmlspecialchars($donnees['alt_value']); ?>"></div>
+              <div class="card_image">
+                <img src="./asset/photo_cards/<?php echo htmlspecialchars($donnees['nom_photo']); ?>" alt="<?php echo htmlspecialchars($donnees['alt_value']); ?>">
+              </div>
               <div class="card_content">
                 <h2 class="card_title"><?php echo htmlspecialchars($donnees['intitule']); ?></h2>
                 <p class="card_text"> Prérequis : <?php echo htmlspecialchars($donnees['pre_requis']); ?></p>
@@ -82,16 +105,20 @@
         header('Location: accueil_formation.php');
       }
 
-      $req_formations->closeCursor(); // Fin de requète SQL
-      fclose($monFichier);
+        $req_formations->closeCursor(); // Fin de requète SQL
+        $req_entete->closeCursor();
+        fclose($monFichier);
       ?>
 
-    </ul>
-  </div>
+      </ul>
+    </div>
 
-  <!-- footer -->
-  <?php include("footer.php"); ?>
-  <!-- fin footer -->
+
+
+
+    <!-- footer -->
+    <?php include("footer.php"); ?>
+    <!-- fin footer -->
 
 </body>
 
