@@ -631,23 +631,36 @@ c-177 0 -332 -4 -343 -9z" />
 
   <!-- Section partenaires -->
   <section class="partners_banner">
-    <h1>Nos partenaires</h1>
-    <div class="partners_img_wrapper">
-      <img src="./asset/partners_banner/kairos_transparent.png" alt="Logo Kairos">
-      <img src="./asset/partners_banner/qualiopi_transparent.png" alt="Logo Qualiopi">
-      <img src="./asset/partners_banner/pole_emploi_transparent.png" alt="Logo Pôle Emploi">
-      <img src="./asset/partners_banner/region_idf_transparent.png" alt="Logo Région Ile-de-France">
-      <img src="./asset/partners_banner/dept_val_d_oise_transparent.png" alt="Logo Département Val d'Oise">
-      <img src="./asset/partners_banner/datadock_transparent.png" alt="Logo Datadock">
-    </div>
-    <div class="partners_img_wrapper">
-      <img src="./asset/partners_banner/dokelio_transparent.png" alt="Logo Dokelio">
-      <img src="./asset/partners_banner/afnor_transparent.png" alt="Logo Afnor">
-      <img src="./asset/partners_banner/france_comp_transparent.png" alt="Logo France compétences">
-      <img src="./asset/partners_banner/conflans.png" alt="logo de la ville de Conflans" class="conflans_logo">
-      <img src="./asset/partners_banner/defi_metiers.png" alt="logo défi métiers">
-      <img src="./asset/partners_banner/logo-cap-metiers.png" alt="logo cap métiers">
-    </div>
+      <h1>Nos partenaires</h1>
+      <div class="partners_img_wrapper">
+        <?php
+            $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
+            $login = trim(fgets($monFichier));
+            $mdp = trim(fgets($monFichier));
+
+
+            try {
+                $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            } catch (Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
+            $req = $bdd->query('SELECT id_logo, nom_logo, alt_value FROM logo_partenaire_accueil');
+            ?>
+            <?php
+            while ($donnees = $req->fetch()) {
+                if (empty($donnees)) {
+                echo "La page demandée n'existe pas...";
+                } else {
+            ?>              
+                
+                <img src="./asset/partners_banner/<?php echo htmlspecialchars($donnees['nom_logo']); ?>" alt="<?php echo htmlspecialchars($donnees['alt_value']); ?>">
+                    
+                <?php
+                }
+            }
+            $req->closeCursor(); // Fin de requète SQL
+        ?>
+      </div>
     <hr class="bande_blanche">
   </section>
   <!-- Fin section partenaires -->
