@@ -48,6 +48,7 @@
   background: #004CAE;
   margin: 25px auto;
   text-align: left;
+  border-radius: 2rem;
   
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);

@@ -113,15 +113,13 @@
   <!-- fin carrousel -->
 
   <!-- section about us  -->
-
-
   <div id="contain">
     <div id="card-container">
       <div class="col-wrapper">
         <div class="col col-1">
           <div class="item">
             <div class="item-img">
-              <img src="asset/img/Stats_cfr.webp">
+              <img src="asset/img/Stats_cfr.jpg">
             </div>
             <div class="item-desc">
               <h2 class="item-heading">Qui sommes nous?</h2>
@@ -136,17 +134,6 @@
       </div>
     </div>
   </div>
-  <!-- <section class="about_us_section">
-    <img class="about_us_img" src="asset/img/Aboutus-1.jpg" alt="Une image d'illustration de travail de bureau">
-    <div class="about_us_text">
-      <h1>Qui sommes-nous ?</h1>
-      <p>CFR est un centre de formation pluridisciplinaire qui a pour mission de former l’ensemble des profils désirant
-        se former à l’un de nos domaines d’expertise.
-        Ainsi nous nous adressons autant aux demandeurs d’emploi qu’aux entreprises souhaitant former leur personnel ou
-        tout autre personne souhaitant se former.</p>
-      <p><a href="qui_sommes_nous.html" class="about_us_link">En savoir plus</a></p>
-    </div>
-  </section>*/ -->
   <!-- fin section about us  -->
 
   <!-- Bannière stats -->
