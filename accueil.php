@@ -672,23 +672,11 @@ c-177 0 -332 -4 -343 -9z" />
         <div id="testimonial-slider" class="owl-carousel">
 
           <?php
-          $monFichier = fopen('../cfr_db_reader/user.txt', 'r');
-          $login = trim(fgets($monFichier));
-          $mdp = trim(fgets($monFichier));
-
-
-          try {
-            $bdd = new PDO('mysql:host=localhost:3306;dbname=ojtb5163_GroupeCFR_DB;charset=utf8', $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-          } catch (Exception $e) {
-            die('Erreur : ' . $e->getMessage());
-          }
-          $req = $bdd->query('SELECT ID, NOM, FORMATION, TYPEFORMA, AVATAR, FEEDBACK, ALT_VALUE FROM CFR_FEEDBACK');
-          ?>
-          <?php
-          while ($donnees = $req->fetch()) {
-            if (empty($donnees)) {
-              echo "La page demandée n'existe pas...";
-            } else {
+            $req = $bdd->query('SELECT ID, NOM, FORMATION, TYPEFORMA, AVATAR, FEEDBACK, ALT_VALUE FROM CFR_FEEDBACK');
+            while ($donnees = $req->fetch()) {
+              if (empty($donnees)) {
+                echo "La page demandée n'existe pas...";
+              } else {
           ?>
 
               <div class="testimonial">
