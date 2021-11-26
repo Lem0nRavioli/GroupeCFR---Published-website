@@ -54,11 +54,13 @@
         <div class="btn_titre">
           <a href="formation.php"><img src="./asset/icons/long-arrow-left.svg" class="icofont-long-arrow-left"></img><span>Nos formations</span></a>
           <h1 id="titre_cards_formations">
-            <?php echo htmlspecialchars($req_entete['titre']); 
+            <?php
+              while ($en_tete = $req_entete->fetch()) {
+               echo htmlspecialchars($en_tete['titre']); 
             ?>
           </h1>
         </div>
-        <p id="intro_text"><?php echo htmlspecialchars($req_entete['texte_description']);?></p>
+        <p id="intro_text"><?php echo htmlspecialchars($en_tete['texte_description']); }?></p>
       </div>
     </div>
     <div class="container_cards">
@@ -104,6 +106,7 @@
       }
 
         $req_formations->closeCursor(); // Fin de requète SQL
+        $req_entete->closeCursor();
         fclose($monFichier);
       ?>
 
