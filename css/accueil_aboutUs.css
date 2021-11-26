@@ -65,6 +65,7 @@
 .item-img img {
   position: relative;
   width: 100%;
+  border-radius: 2rem 2rem 10rem 10rem;
 
 }
 
@@ -106,8 +107,7 @@
 
 @media (max-width: 985px) {
   
-
-  
+    
   .col-wrapper {
     width: 55%;
   }
@@ -115,6 +115,13 @@
 }
 
 @media (max-width: 675px) {
+
+  .item-img img {
+    position: relative;
+    width: 100%;
+    border-radius: 2rem;
+  
+  }
   
   .col-wrapper {
     width: 80%;
